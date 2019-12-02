@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employee.Persistence
+namespace EmployeePersistence
 {
-    public class EmployeeRepository
+    public class Class1
     {
     }
 }

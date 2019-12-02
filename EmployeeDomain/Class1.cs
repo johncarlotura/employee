@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Employee.Domain
+namespace EmployeeDomain
 {
-    public class EmployeeManager
+    public class Class1
     {
     }
 }
