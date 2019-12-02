@@ -299,13 +299,9 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeData\EmployeeData.csproj">
-      <Project>{1374cb92-a6f5-4c1c-8f0b-728ba3a57249}</Project>
-      <Name>EmployeeData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EmployeeDomain\EmployeeDomain.csproj">
+    <ProjectReference Include="..\EmployeeDomain\Employee.Domain.csproj">
       <Project>{664e467d-e013-4329-8ad0-e5ffb2d003ad}</Project>
-      <Name>EmployeeDomain</Name>
+      <Name>Employee.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
