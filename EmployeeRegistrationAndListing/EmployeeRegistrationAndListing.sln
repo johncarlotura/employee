@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDomain", "..\Employ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePersistence", "..\EmployeePersistence\EmployeePersistence.csproj", "{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeData", "..\EmployeeData\EmployeeData.csproj", "{1374CB92-A6F5-4C1C-8F0B-728BA3A57249}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1374CB92-A6F5-4C1C-8F0B-728BA3A57249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1374CB92-A6F5-4C1C-8F0B-728BA3A57249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1374CB92-A6F5-4C1C-8F0B-728BA3A57249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1374CB92-A6F5-4C1C-8F0B-728BA3A57249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,9 +49,6 @@
     <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\AspNet.ScriptManager.bootstrap.4.3.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
-    <Reference Include="Employee.Domain">
-      <HintPath>Employee.Domain\bin\Debug\Employee.Domain.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -135,25 +132,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="EmployeeEntity.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EmployeeEntity.Context.cs</LastGenOutput>
-      <DependentUpon>EmployeeEntity.edmx</DependentUpon>
-    </Content>
-    <Content Include="EmployeeEntity.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmployeeEntity.edmx</DependentUpon>
-      <LastGenOutput>EmployeeEntity.cs</LastGenOutput>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <EntityDeploy Include="EmployeeEntity.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmployeeEntity.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="EmployeeEntity.edmx.diagram">
-      <DependentUpon>EmployeeEntity.edmx</DependentUpon>
-    </Content>
+    <Content Include="Maintenance.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -250,21 +231,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeEntity.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntity.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeEntity.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeeEntity.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeEntity.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -274,6 +240,13 @@
     </Compile>
     <Compile Include="Information.aspx.designer.cs">
       <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance.aspx.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maintenance.aspx.designer.cs">
+      <DependentUpon>Maintenance.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -289,9 +262,6 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Table.cs">
-      <DependentUpon>EmployeeEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -329,6 +299,10 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EmployeeData\EmployeeData.csproj">
+      <Project>{1374cb92-a6f5-4c1c-8f0b-728ba3a57249}</Project>
+      <Name>EmployeeData</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EmployeeDomain\EmployeeDomain.csproj">
       <Project>{664e467d-e013-4329-8ad0-e5ffb2d003ad}</Project>
       <Name>EmployeeDomain</Name>

@@ -11,9 +11,7 @@ namespace EmployeeRegistrationAndListing
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            birthdayText.ReadOnly = true;
-            fromText.ReadOnly = true;
-            toText.ReadOnly = true;
+            
         }
 
         protected void birthdayButton_Click(object sender, ImageClickEventArgs e)

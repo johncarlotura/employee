@@ -21,6 +21,7 @@ namespace EmployeeRegistrationAndListing
             PassTextBox.Text = "";
             //PassTextBox.PasswordChar = '*';
             PassTextBox.MaxLength = 14;
+            Response.Redirect("Information.aspx");
 
 
         }
