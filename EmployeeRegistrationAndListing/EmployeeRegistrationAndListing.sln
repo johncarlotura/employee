@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeRegistrationAndListing", "EmployeeRegistrationAndListing.csproj", "{F555D1A9-957C-4D8F-8D12-A7DB1DB9C4EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.Domain", "..\EmployeeDomain\Employee.Domain.csproj", "{664E467D-E013-4329-8AD0-E5FFB2D003AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDomain", "..\EmployeeDomain\EmployeeDomain.csproj", "{664E467D-E013-4329-8AD0-E5FFB2D003AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employee.Persistence", "..\EmployeePersistence\Employee.Persistence.csproj", "{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePersistence", "..\EmployeePersistence\EmployeePersistence.csproj", "{8FCE234D-E4E1-4E6B-A70E-1255F55E624C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

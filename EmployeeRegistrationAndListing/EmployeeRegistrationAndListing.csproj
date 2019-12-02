@@ -64,6 +64,7 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -117,10 +118,6 @@
   <ItemGroup>
     <Content Include="61457.png" />
     <Content Include="About.aspx" />
-    <Content Include="App_Data\Employee.mdf" />
-    <Content Include="App_Data\Employee_log.ldf">
-      <DependentUpon>Employee.mdf</DependentUpon>
-    </Content>
     <Content Include="calendar-512.png" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Contact.aspx" />
@@ -299,10 +296,13 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeDomain\Employee.Domain.csproj">
+    <ProjectReference Include="..\EmployeeDomain\EmployeeDomain.csproj">
       <Project>{664e467d-e013-4329-8ad0-e5ffb2d003ad}</Project>
-      <Name>Employee.Domain</Name>
+      <Name>EmployeeDomain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

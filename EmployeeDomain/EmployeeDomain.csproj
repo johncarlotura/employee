@@ -7,7 +7,7 @@
     <ProjectGuid>{664E467D-E013-4329-8AD0-E5FFB2D003AD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmployeeDomain</RootNamespace>
+    <RootNamespace>Employee.Domain</RootNamespace>
     <AssemblyName>EmployeeDomain</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

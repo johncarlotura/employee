@@ -1,16 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Information.aspx.cs" Inherits="EmployeeRegistrationAndListing.Information" %>
- 
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <style type="text/css">
         .auto-style1 {
             margin-left: 0px;
@@ -18,7 +12,6 @@
         .auto-style2 {
             width: 99%;
             margin-top: 0px;
-            /*margin: auto;*/
         }
         .auto-style3 {
             height: 219px;
@@ -32,80 +25,17 @@
         .auto-style6 {
             height: 219px;
             width: 246px;
-           
         }
         .auto-style7 {
             height: 27px;
             width: 246px;
         }
-        .auto-style8 {
-            font-weight: bold;
-           margin: auto;
-        }
- 
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
-
-
-                .topnav a:hover {
-                    background-color: #ddd;
-                    color: black;
-                }
-
-
-                .topnav a.active {
-                    background-color: #4CAF50;
-                    color: white;
-                }
-
-
-        .topnav-right {
-            float: right;
-        }
-
-        .auto-style9 {
-            height: 25px;
-        }
-        .auto-style10 {
-            width: 246px;
-            height: 25px;
-        }
-
     </style>
 </head>
 <body>
-
-     
-    
-               
-
     <form id="form1" runat="server">
-       <div class="topnav">
-         <div class="topnav-right">
-                    <a href="#Changepass">Change Password</a>
-                    <a href="#Logout">Logout</a>
-                    <a>Welcome, "Lebron"</a>
-                </div>
-             </div>
-        <asp:Image ID="Image2" runat="server" Height="25px" ImageUrl="~/Settings_black-512.png" Width="25px" />
-                
-                <span class="auto-style8">&nbsp;&nbsp; ADD USERS</span></span><asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="579px">
-         
-                    <hr />
-            &nbsp;<table cellspacing="3" class="auto-style2" style = "text-align: center">
-                <div class ="border1" >
+        <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="579px">
+            &nbsp;<table cellspacing="3" class="auto-style2">
                 <tr>
                     <td><strong>Employee Information</strong></td>
                     <td class="auto-style5">&nbsp;</td>
@@ -126,12 +56,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style9">Employee Id: </td>
-                    <td class="auto-style10">
+                    <td>Employee Id: </td>
+                    <td class="auto-style5">
                         <asp:TextBox ID="empIdText" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style9"></td>
-                    <td class="auto-style9">
+                    <td>&nbsp;</td>
+                    <td>
                         <asp:DropDownList ID="DropDownList1" runat="server">
                             <asp:ListItem>Mr.</asp:ListItem>
                             <asp:ListItem>Ms.</asp:ListItem>
@@ -250,7 +180,9 @@
                         <asp:TextBox ID="confirmPassText" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style4"></td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">
+                        <asp:Button ID="createButton" runat="server" OnClick="createButton_Click" Text="Create" />
+                    </td>
                 </tr>
             </table>
             <br />
