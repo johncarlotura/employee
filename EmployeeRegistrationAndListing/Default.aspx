@@ -55,5 +55,11 @@
         </div>
     </form>
 
+    <p>
+    </p>
+    <center>
+        The information contained herein is the confidential and proprietary property of Computer Aid, Incorporated.</center>
+    </p>
+
 </body>
 </html>

@@ -25,6 +25,11 @@
         }
 
     
+        .auto-style6 {
+            font-size: xx-large;
+        }
+
+    
         </style>
 </head>
 <body>
@@ -32,9 +37,9 @@
         <div>
             <div class="auto-style1">
             &nbsp;<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="25px" ImageUrl="~/61457.png" Width="25px" />
+                
+                &nbsp;&nbsp;<strong><span class="auto-style6">&nbsp;CHANGE PASSWORD</span></strong>
                 <asp:Panel ID="Panel1" runat="server" CssClass="auto-style2" Height="248px" Width="490px">
                     <br />
                     <table cellspacing="3" class="auto-style3">
@@ -68,6 +73,12 @@
                 </asp:Panel>
         </div>
     </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <center>The information contained herein is the confidential and proprietary property of Computer Aid, Incorporated.</center></p>
 </body>
 </html>
 
