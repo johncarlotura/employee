@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeDomain
 {
-    public class Class1
+    public class Validations
     {
     }
 }
