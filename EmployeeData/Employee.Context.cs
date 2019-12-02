@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EmployeeRegistrationAndListing
+namespace EmployeeData
 {
     using System;
     using System.Data.Entity;
@@ -25,6 +25,5 @@ namespace EmployeeRegistrationAndListing
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Table> Tables { get; set; }
     }
 }
