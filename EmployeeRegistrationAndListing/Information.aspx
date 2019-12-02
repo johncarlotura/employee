@@ -103,13 +103,13 @@
                 <tr>
                     <td class="auto-style3">Effective Date: From:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="fromText" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="fromText" runat="server" ReadOnly="True"></asp:TextBox>
                         <asp:ImageButton ID="fromButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="fromButton_Click" />
                         <asp:Calendar ID="fromCalendar" runat="server" OnSelectionChanged="fromCalendar_SelectionChanged" Visible="False"></asp:Calendar>
                     </td>
                     <td class="auto-style3">Date of Birth:</td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="birthdayText" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="birthdayText" runat="server" ReadOnly="True"></asp:TextBox>
                         &nbsp;<asp:ImageButton ID="birthdayButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="birthdayButton_Click" />
                         &nbsp;<asp:Calendar ID="birthdayCalendar" runat="server" OnSelectionChanged="birthdayCalendar_SelectionChanged" Visible="False"></asp:Calendar>
                     </td>
@@ -117,7 +117,7 @@
                 <tr>
                     <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To:</td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="toText" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="toText" runat="server" ReadOnly="True"></asp:TextBox>
                         <asp:ImageButton ID="toButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="toButton_Click" />
                         <asp:Calendar ID="toCalendar" runat="server" OnSelectionChanged="toCalendar_SelectionChanged" Visible="False"></asp:Calendar>
                     </td>
