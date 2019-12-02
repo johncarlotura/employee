@@ -37,9 +37,9 @@
         <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="579px">
             &nbsp;<table cellspacing="3" class="auto-style2">
                 <tr>
-                    <td>Employee Information</td>
+                    <td><strong>Employee Information</strong></td>
                     <td class="auto-style5">&nbsp;</td>
-                    <td>Contact Details:&nbsp; </td>
+                    <td><strong>Contact Details:&nbsp; </strong> </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -101,14 +101,28 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Effective Date: From:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To:</td>
-                    <td class="auto-style6">&nbsp;</td>
+                    <td class="auto-style3">Effective Date: From:<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="fromText" runat="server"></asp:TextBox>
+                        <asp:ImageButton ID="fromButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="fromButton_Click" />
+                        <asp:Calendar ID="fromCalendar" runat="server" OnSelectionChanged="fromCalendar_SelectionChanged" Visible="False"></asp:Calendar>
+                    </td>
                     <td class="auto-style3">Date of Birth:</td>
                     <td class="auto-style3">
                         <asp:TextBox ID="birthdayText" runat="server"></asp:TextBox>
-                        &nbsp;<asp:ImageButton ID="ImageButton1" runat="server" />
-                        &nbsp;<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                        &nbsp;<asp:ImageButton ID="birthdayButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="birthdayButton_Click" />
+                        &nbsp;<asp:Calendar ID="birthdayCalendar" runat="server" OnSelectionChanged="birthdayCalendar_SelectionChanged" Visible="False"></asp:Calendar>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; To:</td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="toText" runat="server"></asp:TextBox>
+                        <asp:ImageButton ID="toButton" runat="server" Height="25px" ImageUrl="~/calendar-512.png" OnClick="toButton_Click" />
+                        <asp:Calendar ID="toCalendar" runat="server" OnSelectionChanged="toCalendar_SelectionChanged" Visible="False"></asp:Calendar>
+                    </td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
                 </tr>
                 <tr>
                     <td>Signature</td>
@@ -117,7 +131,7 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>Login Information:</td>
+                    <td><strong>Login Information:</strong></td>
                     <td class="auto-style5">&nbsp;</td>
                     <td>Name:</td>
                     <td>

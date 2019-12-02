@@ -123,6 +123,33 @@ namespace EmployeeRegistrationAndListing
         protected global::System.Web.UI.WebControls.TextBox lastNameText;
 
         /// <summary>
+        /// fromText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox fromText;
+
+        /// <summary>
+        /// fromButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton fromButton;
+
+        /// <summary>
+        /// fromCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar fromCalendar;
+
+        /// <summary>
         /// birthdayText control.
         /// </summary>
         /// <remarks>
@@ -132,22 +159,49 @@ namespace EmployeeRegistrationAndListing
         protected global::System.Web.UI.WebControls.TextBox birthdayText;
 
         /// <summary>
-        /// ImageButton1 control.
+        /// birthdayButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton birthdayButton;
 
         /// <summary>
-        /// Calendar1 control.
+        /// birthdayCalendar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Calendar birthdayCalendar;
+
+        /// <summary>
+        /// toText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox toText;
+
+        /// <summary>
+        /// toButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton toButton;
+
+        /// <summary>
+        /// toCalendar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar toCalendar;
 
         /// <summary>
         /// emergencyName control.

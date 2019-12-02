@@ -124,6 +124,7 @@
     <Content Include="App_Data\Employee_log.ldf">
       <DependentUpon>Employee.mdf</DependentUpon>
     </Content>
+    <Content Include="calendar-512.png" />
     <Content Include="ChangePassword.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
