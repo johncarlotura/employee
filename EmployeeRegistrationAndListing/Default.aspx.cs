@@ -14,6 +14,15 @@ namespace EmployeeRegistrationAndListing
 
         }
 
-        
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+            string username = UsernameTextBox.Text;
+            string password = PassTextBox.Text;
+            PassTextBox.Text = "";
+            //PassTextBox.PasswordChar = '*';
+            PassTextBox.MaxLength = 14;
+
+
+        }
     }
 }
