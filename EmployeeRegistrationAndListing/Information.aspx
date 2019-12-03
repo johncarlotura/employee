@@ -30,11 +30,60 @@
             height: 27px;
             width: 246px;
         }
+
+         .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+ 
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+ 
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+ 
+
+                .topnav a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+ 
+
+        .topnav-right {
+            float: right;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:Panel ID="Panel1" runat="server" CssClass="auto-style1" Height="579px">
+        
+                <div class="topnav" >
+                <div class="topnav-right">
+                    <a href="#Changepass">Change Password</a>
+                    <a href="#Logout">Logout</a>
+                    <a>Welcome, "Lebron"</a>
+                </div>
+            </div>
+        <br />
+        <br />
+             <asp:Image ID="Image2" runat="server" Height="20px" ImageUrl="~/Settings_black-512.png" Width="20px" />
+                <strong><span class="auto-style8">ADD USERS</span></strong><br />
+        <asp:Panel ID="Panel2" runat="server" CssClass="auto-style1" Height="579px">
+            
             &nbsp;<table cellspacing="3" class="auto-style2">
                 <tr>
                     <td><strong>Employee Information</strong></td>
